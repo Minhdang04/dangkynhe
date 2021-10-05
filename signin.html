@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h2>ĐĂNG NHẬP</h2>
+        <form role="form" onsubmit="signIn(event);" autocomplete="off"> <!-- Sau khi nhập xong thì bấm button nó sẽ kích hoạt cái signIn(event) trong script.js-->
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Địa chỉ email" required> <!-- Mấy cái ô để input tên email các kiểu -->
+            </div>
+            <div class="form-group">
+                <input type="password" name="pwd" id="pwd" placeholder="Mật khẩu" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Đăng nhập</button>
+            </div>
+        </form>
+        <p>Chưa có tài khoản? <a href="signup.html">Đăng ký</a> ở đây</p> <!-- Link qua phần sign up -->
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

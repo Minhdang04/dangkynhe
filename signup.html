@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h2>ĐĂNG KÝ</h2>
+        <form role="form" onsubmit="signUp(event);" autocomplete="off"> <!-- Giống y chang cái signin.html chỉ khác cái function signUp-->
+            
+            <!-- Đoạn này có cũng được không có cũng không sao vì t không chèn function gì vào đây cả... chỉ lưu vào localstorage cho nó ngầu thôi -->
+            <div class="form-group">
+                <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            </div>
+            <!--  -->
+
+
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="pwd" id="pwd" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Đăng ký</button>
+            </div>
+        </form>
+        <p>Bạn đã có tài khoản? <a href="signin.html">Đăng nhập</a></p>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
